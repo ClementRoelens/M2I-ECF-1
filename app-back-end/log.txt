@@ -1,0 +1,103 @@
+26/10/2023 16:41:19
+GET projects demandé par http://localhost:5173
+
+26/10/2023 16:41:28
+GET projects/46567c52-e34e-409f-b49f-3f4f8a6143ff demandé par http://localhost:5173
+Le projet a bien été envoyé
+
+26/10/2023 16:41:31
+GET projects/16d2a47f-348d-41b9-bb15-2e131a8876b9 demandé par http://localhost:5173
+Le projet a bien été envoyé
+
+26/10/2023 16:43:40
+POST projects/ demandé par http://localhost:5173
+Projet créé avec succès. Id : 0d6ec79b-f706-495e-8f28-df9dc2fedf35
+
+26/10/2023 16:43:45
+GET projects/0d6ec79b-f706-495e-8f28-df9dc2fedf35 demandé par http://localhost:5173
+Le projet a bien été envoyé
+
+26/10/2023 16:43:46
+GET projects/0d6ec79b-f706-495e-8f28-df9dc2fedf35 demandé par http://localhost:5173
+Le projet a bien été envoyé
+
+26/10/2023 16:43:48
+PUT projects/0d6ec79b-f706-495e-8f28-df9dc2fedf35 demandé par http://localhost:5173
+Projet modifié avec succès
+
+
+26/10/2023 16:43:48
+GET projects/0d6ec79b-f706-495e-8f28-df9dc2fedf35 demandé par http://localhost:5173
+Le projet a bien été envoyé
+
+26/10/2023 16:43:51
+POST projects/ demandé par undefined
+Mais le corps de la requête n'était pas au bon format
+Corps passé : {
+'key' : 'je suis un petit galopin' , 
+'valeur' : 'galopinade'
+}
+
+26/10/2023 16:44:18
+GET projects demandé par undefined
+
+26/10/2023 16:44:33
+GET projects/46567c52-e34e-409f-b49f-3f4f8a6143ff demandé par undefined
+Le projet a bien été envoyé
+
+26/10/2023 16:44:50
+PUT projects/46567c52-e34e-409f-b49f-3f4f8a6143ff demandé par undefined
+L'id passé ne semble pas correspondre avec celle du projet passé
+
+26/10/2023 16:53:39
+GET projects/teapot demandé par http://localhost:5173
+Le projet n'a pas été trouvé
+
+26/10/2023 16:55:29
+GET projects demandé par http://localhost:5173
+
+26/10/2023 16:55:44
+PUT projects/46567c52-e34e-409f-b49f-3f4f8a6143ff demandé par undefined
+L'id passé ne semble pas correspondre avec celle du projet passé
+
+26/10/2023 17:04:41
+GET projects demandé par http://localhost:5173
+
+26/10/2023 17:06:08
+GET projects demandé par http://localhost:5173
+
+26/10/2023 17:14:02
+GET projects demandé par http://localhost:5173
+
+26/10/2023 17:14:04
+GET projects/random demandé par http://localhost:5173
+Le projet dd11d7f0-e133-4414-b9ec-11675ca19120 a été renvoyé
+
+26/10/2023 17:14:04
+GET projects/random demandé par http://localhost:5173
+Le projet 16d2a47f-348d-41b9-bb15-2e131a8876b9 a été renvoyé
+
+26/10/2023 17:14:04
+GET projects/random demandé par http://localhost:5173
+Le projet b4aafb6d-3cf8-4c3f-997b-b58538cb5849 a été renvoyé
+
+26/10/2023 17:14:05
+GET projects/random demandé par http://localhost:5173
+Le projet 62b77dcc-309b-42f6-b5f1-69637d809082 a été renvoyé
+
+26/10/2023 17:14:14
+POST projects/ demandé par http://localhost:5173
+Projet créé avec succès. Id : c8670fb7-53da-40c7-9d43-fa8a37124f75
+
+26/10/2023 17:14:15
+GET projects/c8670fb7-53da-40c7-9d43-fa8a37124f75 demandé par http://localhost:5173
+Le projet a bien été envoyé
+
+26/10/2023 17:14:16
+DELETE projects/c8670fb7-53da-40c7-9d43-fa8a37124f75 demandé par http://localhost:5173
+Projet supprimé avec succès
+
+
+26/10/2023 17:14:21
+GET projects demandé par http://localhost:5173
+

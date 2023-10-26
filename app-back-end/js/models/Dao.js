@@ -23,6 +23,7 @@ class Dao {
                 const stringFileContent = (yield (0, promises_1.readFile)((0, path_1.resolve)(this._filePath))).toString("utf-8");
                 this._projects = JSON.parse(stringFileContent).projects;
                 console.log("DB locale lue\n");
+                this._logContent = (yield (0, promises_1.readFile)((0, path_1.resolve)("log.txt"))).toString();
             }
             catch (err) {
                 console.error("Une erreur est survenue lors de la lecture du fichier\n", err.message);
@@ -53,6 +54,11 @@ class Dao {
     }
     getOneProject(id) {
         return this._projects.find((project) => project.id === id);
+    }
+    getOneRandomProject() {
+        if (this._projects.length > 0) {
+            return this._projects[Math.floor(Math.random() * this._projects.length)];
+        }
     }
     addOneProject(project) {
         return __awaiter(this, void 0, void 0, function* () {

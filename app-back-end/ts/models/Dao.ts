@@ -4,6 +4,7 @@ import { Project } from "./Project";
 
 export class Dao {
     private _projects: Project[];
+    private _logContent:string;
 
     constructor(private _filePath: string) {
         this.initialize();
@@ -14,6 +15,7 @@ export class Dao {
             const stringFileContent = (await readFile(resolve(this._filePath))).toString("utf-8");
             this._projects = JSON.parse(stringFileContent).projects;
             console.log("DB locale lue\n");
+            this._logContent = (await readFile(resolve("log.txt"))).toString();
         }
         catch (err: any) {
             console.error("Une erreur est survenue lors de la lecture du fichier\n", err.message);
@@ -42,6 +44,12 @@ export class Dao {
 
     getOneProject(id: string): Project | undefined {
         return this._projects.find((project: Project) => project.id === id);
+    }
+
+    getOneRandomProject() : Project | undefined {
+        if (this._projects.length > 0){
+            return this._projects[Math.floor(Math.random()*this._projects.length)];
+        }
     }
 
     async addOneProject(project: Project): Promise<{ code: number, result: Project | string }> {
